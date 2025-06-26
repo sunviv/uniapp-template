@@ -1,0 +1,79 @@
+{
+  "easycom": {
+    "custom": {
+      "^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue",
+      "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "needLogin": true
+    },
+    {
+      "path": "pages/examples/data-filter/search-tab"
+    },
+    {
+      "path": "pages/examples/data-filter/tab-filter"
+    },
+    {
+      "path": "pages/examples/data-filter/sort-drop"
+    },
+    {
+      "path": "pages/examples/data-filter/explicit-filter"
+    },
+    {
+      "path": "pages/examples/data-input/form-demo"
+    },
+    {
+      "path": "pages/examples/data-input/custom-select"
+
+    },
+    {
+      "path": "pages/mine/index"
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/common",
+      "pages": [
+        {
+          "path": "login/index"
+        },
+        {
+          "path": "webview/index"
+        },
+        {
+          "path": "404/index"
+        }
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/home/index": {
+      "network": "all",
+      "packages": ["pages/common"]
+    }
+  },
+  "tabBar": {
+    "color": "#4d4f4e",
+    "selectedColor": "#2979ff",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "iconPath": "static/images/tabbar/icon-tab-examples.png",
+      "selectedIconPath": "static/images/tabbar/icon-tab-examples-active.png",
+      "pagePath": "pages/home/index",
+      "text": "模版"
+    }, {
+      "iconPath": "static/images/tabbar/icon-tab-mine.png",
+      "selectedIconPath": "static/images/tabbar/icon-tab-mine-active.png",
+      "pagePath": "pages/mine/index",
+      "text": "我的"
+    }]
+  },
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "backgroundColor": "#F0F3FA"
+  }
+}
