@@ -20,12 +20,7 @@
       <div class="h-16 bg-placeholder" />
       <wd-collapse-item title="数据展示" name="dataDisplay" class="collapse-item" custom-body-class="collapse-item-body">
         <wd-cell-group border>
-          <wd-cell title="基础列表1" is-link />
-          <wd-cell title="基础列表2" is-link />
-          <wd-cell title="基础列表3" is-link />
-          <wd-cell title="复杂列表1" is-link />
-          <wd-cell title="复杂列表2" is-link />
-          <wd-cell title="复杂列表3" is-link />
+          <wd-cell title="列表+普通分页" is-link @click="navigateTo('/pages/examples/data-display/data-list')" />
         </wd-cell-group>
       </wd-collapse-item>
       <div class="h-16 bg-placeholder" />

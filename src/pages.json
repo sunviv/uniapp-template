@@ -30,6 +30,9 @@
 
     },
     {
+      "path": "pages/examples/data-display/data-list"
+    },
+    {
       "path": "pages/mine/index"
     }
   ],
