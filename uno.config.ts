@@ -51,8 +51,9 @@ export default defineConfig({
    * @see https://github.com/unocss/unocss#shortcuts
    */
   shortcuts: {
-    'border-base': 'border border-gray-500_10',
-    'center': 'flex justify-center items-center',
+    'tag-green': 'mr-2 flex-shrink-0 rounded bg-[#E0F3D6] px-1 py-1 text-30 text-[#18BC37] font-bold leading-none',
+    'tag-yellow': 'mr-2 flex-shrink-0 rounded bg-[#FFE6C2] px-1 py-1 text-30 text-[#FF9428] font-bold leading-none',
+    'tag-blue': 'mr-2 flex-shrink-0 rounded bg-[#D8EBFF] px-1 py-1 text-30 text-[#2979FF] font-bold leading-none',
   },
   transformers: [
     // 启用 @apply 功能
