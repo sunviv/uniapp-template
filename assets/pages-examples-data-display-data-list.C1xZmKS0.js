@@ -1,0 +1,1 @@
+import{d as a,a as s,e,i as t,b as o,k as r}from"./index-B7HrTH2H.js";import{_ as p}from"./_plugin-vue_export-helper.BCo6x5W8.js";const _=p(a({__name:"data-list",setup:a=>(a,p)=>{const _=t;return o(),s(_,{class:""},{default:e(()=>[r(" 列表展示 ")]),_:1})}}),[["__scopeId","data-v-63377436"]]);export{_ as default};
