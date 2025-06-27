@@ -1,1 +1,0 @@
-import{d as s,r as a,C as t,aF as e,a as l,u as r,aG as n,b as u}from"./index-Bm-17c-5.js";const o=s({__name:"index",setup(s){const o=a("");return t(s=>{s.url&&(o.value=decodeURIComponent(s.url)),s.title&&e({title:s.title})}),(s,a)=>{const t=n;return u(),l(t,{class:"h-full",src:r(o)},null,8,["src"])}}});export{o as default};
