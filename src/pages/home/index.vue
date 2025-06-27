@@ -32,10 +32,10 @@
     </wd-collapse>
     <div class="h-120" />
     <wd-fab type="primary" position="right-bottom" direction="top">
-      <wd-button custom-class="w-64 h-64 m-1" type="primary" round>
+      <wd-button custom-class="w-64 h-64 m-1" type="primary" round @click="openLink('https://github.com/sunviv/uniapp-template')">
         <wd-icon name="github-filled" size="22px" />
       </wd-button>
-      <wd-button custom-class="w-64 h-64 m-1" type="warning" round>
+      <wd-button custom-class="w-64 h-64 m-1" type="warning" round @click="openLink('https://sunviv.github.io/uniapp-template-doc')">
         <wd-icon name="help" size="22px" />
       </wd-button>
     </wd-fab>
@@ -59,6 +59,10 @@ function navigateTo(path: string) {
   uni.navigateTo({
     url: path,
   })
+}
+
+function openLink(url: string) {
+  window.open(url, '_blank')
 }
 </script>
 
