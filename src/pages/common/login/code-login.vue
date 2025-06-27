@@ -1,5 +1,5 @@
 <template>
-  <view class="relative box-border h-screen">
+  <view class="relative box-border h-screen bg-white">
     <view class="relative h-620rpx flex flex-col items-center leading-none">
       <image src="@/static/images/login-bg.png" class="absolute left-0 top-0 h-full w-full -z-1" />
       <image
@@ -40,7 +40,7 @@
       <view class="my-20rpx mb-60rpx px-6 text-24rpx text-font-color-secondary">
         未注册的手机号验证后将自动注册
       </view>
-      <wd-button :round="false" block type="primary" class="mt-8 !mx-6" :loading="isLogin" @click="login">
+      <wd-button size="large" :round="false" block type="primary" class="mt-8 !mx-6" :loading="isLogin" @click="login">
         登录
       </wd-button>
       <view class="mt-10 flex items-center justify-center text-24rpx text-font-color-secondary">

@@ -10,3 +10,5 @@ export const apiUploadFile = (filePath: string) =>
 
 // 发送验证码
 export const apiSendCode = (data: SendCodeReq) => post<SendCodeRes>('/sendCode', { data })
+
+export * from './user'

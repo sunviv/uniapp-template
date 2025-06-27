@@ -1,4 +1,4 @@
-import type { LoginByCodeReq, LoginReq, UserInfoReq } from '@/api/user/types'
+import type { LoginByCodeReq, LoginReq, UserInfoReq } from '@/api/common/user/types'
 import type { UserState } from './types'
 import { apiLogin, apiLoginByCode, apiLogout, apiUserInfo } from '@/api'
 import { clearToken, getToken, setToken } from '@/utils/auth'

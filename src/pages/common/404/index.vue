@@ -6,9 +6,12 @@
 </template>
 
 <script setup lang="ts">
-import { HOME_PATH } from '@/router'
+import { useRouter } from '@/hooks'
+// import { HOME_PATH } from '@/router'
 
+const router = useRouter()
 function handleBack() {
-  uni.switchTab({ url: HOME_PATH })
+  // uni.switchTab({ url: HOME_PATH })
+  router.back()
 }
 </script>
