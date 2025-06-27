@@ -29,7 +29,7 @@
         <wd-input v-model="loginModel.password" prop="password" label-width="120rpx" label="密码" type="text" clearable show-password placeholder="请输入密码" class="login-input my-1" :rules="[{ required: true, message: '请填写密码' }]" />
         <view class="mx-3 border-b-2 border-gray-1 border-b-solid" />
       </wd-form>
-      <wd-button :round="false" block type="primary" class="mt-10 !mx-6" :loading="isLogin" @click="login">
+      <wd-button :round="false" block type="primary" size="large" class="mt-10 !mx-6" :loading="isLogin" @click="login">
         登录
       </wd-button>
       <wd-checkbox v-model="userStore.rememberPwd" true-value="Y" false-value="N" class="ml-6 mt-5">

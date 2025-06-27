@@ -11,28 +11,6 @@
       "needLogin": true
     },
     {
-      "path": "pages/examples/data-filter/search-tab"
-    },
-    {
-      "path": "pages/examples/data-filter/tab-filter"
-    },
-    {
-      "path": "pages/examples/data-filter/sort-drop"
-    },
-    {
-      "path": "pages/examples/data-filter/explicit-filter"
-    },
-    {
-      "path": "pages/examples/data-input/form-demo"
-    },
-    {
-      "path": "pages/examples/data-input/custom-select"
-
-    },
-    {
-      "path": "pages/examples/data-display/data-list"
-    },
-    {
       "path": "pages/mine/index"
     }
   ],
