@@ -80,6 +80,7 @@ export function isPathExists(path = '') {
  * @returns {boolean} 是否是tabbar页面
  */
 export function isTabBarPath(path = '') {
+  if (!pagesJson.tabBar) return false
   const cleanPath = removeQueryString(path)
   return (
     pagesJson.tabBar?.list?.some(
