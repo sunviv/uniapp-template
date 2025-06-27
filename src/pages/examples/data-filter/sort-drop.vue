@@ -53,11 +53,13 @@
         </wd-drop-menu-item>
       </wd-drop-menu>
     </view>
+    <DataList class="h-[calc(100vh-196px)] flex-1" />
   </view>
 </template>
 
 <script lang="ts" setup>
 import { useQueue } from 'wot-design-uni'
+import DataList from './data-list.vue'
 
 const { closeOutside } = useQueue()
 
