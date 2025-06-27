@@ -43,16 +43,16 @@
 </template>
 
 <script lang="ts" setup>
-import { hasPerm } from '@/plugins/permission'
-import { currentRoute } from '@/router'
+import { usePermission } from '@/hooks'
 
 const collapseItemValues = ref<string[]>(['dataFilter', 'dataDisplay', 'dataInput'])
 
 onLoad(() => {
-  //
-  hasPerm('/')
-  const homeRoute = currentRoute()
-  console.log('homeRoute', homeRoute)
+
+})
+
+onShow(() => {
+  usePermission()
 })
 
 function navigateTo(path: string) {

@@ -15,14 +15,8 @@ export const useAppStore = defineStore('app', {
       this.systemInfo = info
     },
     initSystemInfo() {
-      uni.getSystemInfo({
-        success: (res: UniApp.GetSystemInfoResult) => {
-          this.setSystemInfo(res)
-        },
-        fail: (err: any) => {
-          console.error(err)
-        },
-      })
+      const res = uni.getSystemInfoSync()
+      this.setSystemInfo(res)
     },
     checkUpdate() {
       const updateManager = uni.getUpdateManager()
