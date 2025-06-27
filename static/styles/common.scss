@@ -1,14 +1,20 @@
+/* stylelint-disable color-function-notation */
 /* stylelint-disable selector-class-pattern */
 :root,
 page {
-  --wot-color-theme: #2979FF;
-  --wot-color-success: #18BC37;
-  --wot-color-warning: #FF9428;
-  --wot-color-danger: #E43333;
+  --wot-color-theme: #2979ff;
+  --wot-color-success: #18bc37;
+  --wot-color-warning: #ff9428;
+  --wot-color-danger: #e43333;
+  --wot-color-theme-1: #D8EBFF;
+  --wot-color-success-1: #E0F3D6;
+  --wot-color-warning-1: #FFE6C2;
+  --wot-color-danger-1: #f0c2c2;
   --wot-search-input-height: 72rpx;
   --wot-search-input-radius: 16rpx;
   --wot-search-input-bg: #F0F3FA;
   --wot-tabs-nav-fs: 30rpx;
+  --wot-button-medium-height: 64rpx;
   --wot-button-medium-fs: 30rpx;
   --wot-button-medium-radius: 16rpx;
   --wot-message-box-content-fs: 30rpx;
@@ -45,6 +51,10 @@ page {
 
   .wd-button {
     min-width: 0 !important;
+  }
+
+  .wd-button__content {
+    line-height: 1;
   }
 
   .wd-message-box__flex {
@@ -146,6 +156,7 @@ page {
     .form-cell-value {
       text-align: left;
     }
+
 
   }
 

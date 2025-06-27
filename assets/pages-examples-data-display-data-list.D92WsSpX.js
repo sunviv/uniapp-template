@@ -1,1 +1,0 @@
-import{a as s,e,i as a,b as r,k as t}from"./index-DYrsGRvn.js";import{_ as o}from"./_plugin-vue_export-helper.BCo6x5W8.js";const n=o({},[["render",function(o,n){const i=a;return r(),s(i,{class:""},{default:e(()=>[t(" 列表展示 ")]),_:1})}]]);export{n as default};
