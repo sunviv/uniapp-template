@@ -7,7 +7,7 @@
     <view>
       <view v-for="item in dataList" :key="item.id" class="m-3 rounded-xl bg-white p-3">
         <view class="flex items-start">
-          <view class="mr-2 flex-shrink-0 tag-success">
+          <view class="mr-2 flex-shrink-0 tag-primary">
             瓶盖
           </view>
           <view class="break-all text-34 text-font-color-primary font-medium">

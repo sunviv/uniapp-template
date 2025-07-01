@@ -3,7 +3,7 @@
     <z-paging ref="pagingRef" v-model="dataList" :fixed="false" auto-show-system-loading @query="queryList">
       <view v-for="item in dataList" :key="item.id" class="mb-3 rounded-xl bg-white p-3">
         <view class="flex items-start">
-          <view class="tag-green">
+          <view class="tag-success">
             瓶盖
           </view>
           <view class="break-all text-34 text-font-color-primary font-medium">
