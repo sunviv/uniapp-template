@@ -35,6 +35,7 @@ page {
   --wot-textarea-fs: 30rpx;
   --wot-input-fs: 30rpx;
   --wot-input-cell-padding: 24rpx;
+  --wot-steps-finished-color: var(--wot-color-success);
 
   height: 100%;
   background-color: #F0F3FA;
@@ -165,6 +166,66 @@ page {
     height: 1px;
     background: var(--wot-color-border-light, #e8e8e8);
     transform: scaleY(0.5);
+  }
+
+  .wd-step.is-process {
+    .wd-step__icon {
+      border-color: var(--wot-color-theme) !important;
+    }
+
+    .wd-step__icon-outer {
+      background-color: var(--wot-color-theme) !important;
+      border-color: var(--wot-color-theme) !important;
+    }
+  }
+
+
+  :deep(.card-steps) {
+    .wd-step {
+      --wot-steps-icon-size: 44rpx;
+
+      display: flex !important;
+      align-items: center;
+      margin-bottom: 32rpx;
+
+      &:first-child {
+        .wd-step__line {
+          top: calc(50% + var(--wot-steps-icon-size) / 2) !important;
+          height: 100%;
+        }
+      }
+
+      &__icon {
+        top: 50%;
+        background-color: transparent !important;
+        transform: translateY(-50%);
+
+      }
+
+      &__line {
+        top: calc(50% + var(--wot-steps-icon-size) / 2) !important;
+        left: 50% !important;
+        width: 1px;
+        height: calc(100% - 16rpx) !important;
+        transform: none !important;
+      }
+
+      &__title {
+        font-size: 30rpx;
+        font-weight: 400;
+        line-height: 1.4;
+      }
+
+      &__content {
+        flex: 1;
+        padding-bottom: 0 !important;
+        overflow: hidden;
+        background-color: #fff;
+        border-radius: 16rpx;
+      }
+
+    }
+
   }
 }
 
