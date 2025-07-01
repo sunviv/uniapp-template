@@ -21,6 +21,7 @@
       <wd-collapse-item title="数据展示" name="dataDisplay" class="collapse-item" custom-body-class="collapse-item-body">
         <wd-cell-group border>
           <wd-cell title="列表+普通分页" is-link @click="navigateTo('/pages/examples/data-display/data-list')" />
+          <wd-cell title="步骤条" is-link @click="navigateTo('/pages/examples/data-display/step')" />
         </wd-cell-group>
       </wd-collapse-item>
       <div class="h-16 bg-placeholder" />
