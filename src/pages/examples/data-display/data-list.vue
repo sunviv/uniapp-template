@@ -1,7 +1,7 @@
 <template>
   <z-paging ref="pagingRef" v-model="dataList" :fixed="false" auto-show-system-loading auto-show-back-to-top @query="queryList">
     <template #top>
-      <wd-navbar safe-area-inset-top left-arrow title="自定义选择" @click-left="handleBack" />
+      <wd-navbar safe-area-inset-top left-arrow title="列表+普通分页" @click-left="handleBack" />
       <wd-search v-model="searchValue" hide-cancel placeholder-left class="flex-shrink-0 px-2" />
     </template>
     <view>
@@ -73,7 +73,7 @@
           <wd-button type="info" :round="false" plain class="!mr-3" @click="handleConfirm(item)">
             操作一
           </wd-button>
-          <wd-button :round="false" plain class="!mr-3" @click="handleOperation(item)">
+          <wd-button :round="false" plain @click="handleOperation(item)">
             操作二
           </wd-button>
         </view>

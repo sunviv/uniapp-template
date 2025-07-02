@@ -46,7 +46,7 @@ export default defineConfig({
     }),
     presetLegacyCompat({
       // options
-      // commaStyleColorFunction: true,
+      commaStyleColorFunction: true,
       legacyColorSpace: true,
     }),
   ],

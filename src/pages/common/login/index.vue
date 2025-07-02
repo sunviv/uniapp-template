@@ -5,13 +5,13 @@
       <image
         src="@/static/images/logo.png"
         mode="scaleToFill"
-        class="relative z-2 mt-190rpx h-128 w-128"
+        class="relative z-2 mt-180rpx h-128 w-128"
       />
       <view class="relative z-2 mt-4 text-52 text-font-color-primary font-bold">
         海维 Uniapp 开发模版
       </view>
     </view>
-    <view class="relative z-2 box-border overflow-hidden border-rounded-t-5 py-6 -mt-5 !bg-white">
+    <view class="relative z-2 box-border overflow-hidden border-rounded-t-5 py-6 -mt-12 !bg-white">
       <view class="flex items-center justify-between px-6">
         <view class="text-40 text-font-color-primary font-semibold">
           用户登录
@@ -30,7 +30,7 @@
         <view class="mx-3 border-b-2 border-gray-1 border-b-solid" />
       </wd-form>
       <wd-button size="large" :round="false" block type="primary" class="mt-10 !mx-6" :loading="isLogin" @click="login">
-        登录
+        登 录
       </wd-button>
       <wd-checkbox v-model="userStore.rememberPwd" true-value="Y" false-value="N" class="ml-6 mt-5">
         记住密码

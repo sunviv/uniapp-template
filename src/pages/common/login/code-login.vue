@@ -41,7 +41,7 @@
         未注册的手机号验证后将自动注册
       </view>
       <wd-button size="large" :round="false" block type="primary" class="mt-8 !mx-6" :loading="isLogin" @click="login">
-        登录
+        登 录
       </wd-button>
       <view class="mt-10 flex items-center justify-center text-24rpx text-font-color-secondary">
         登录代表你已同意

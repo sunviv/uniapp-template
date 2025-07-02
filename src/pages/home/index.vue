@@ -28,6 +28,7 @@
       <wd-collapse-item title="数据录入" name="dataInput" class="collapse-item" custom-body-class="collapse-item-body">
         <wd-cell-group border>
           <wd-cell title="表单综合案例" is-link @click="navigateTo('/pages/examples/data-input/form-demo')" />
+          <wd-cell title="扫码示例" is-link @click="navigateTo('/pages/examples/data-input/scan')" />
         </wd-cell-group>
       </wd-collapse-item>
     </wd-collapse>
