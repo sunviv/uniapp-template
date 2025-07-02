@@ -1,5 +1,5 @@
 <template>
-  <view class="h-full flex flex-col">
+  <view class="h-full flex flex-col overflow-hidden">
     <wd-navbar left-arrow safe-area-inset-top title="搜索+标签" @click-left="handleBack" />
     <wd-search v-model="searchValue" hide-cancel placeholder-left class="flex-shrink-0 px-2" @search="handleSearch">
       <template #prefix>

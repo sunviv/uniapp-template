@@ -29,7 +29,8 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "types/**/*.d.ts",
-    "types/**/*.ts"
+    "types/**/*.ts",
+    "src/utils/nfc/index.ts"
   ],
   "exclude": ["dist", "node_modules", "uni_modules"]
 }

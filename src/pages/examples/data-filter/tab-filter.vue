@@ -1,5 +1,5 @@
 <template>
-  <view class="h-full flex flex-col">
+  <view class="h-full flex flex-col overflow-hidden">
     <wd-navbar safe-area-inset-top left-arrow title="标签+简单条件筛选" @click-left="handleBack" />
 
     <wd-tabs v-model="activeTab" slidable="always" class="min-h-50 flex-1">

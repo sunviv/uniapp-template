@@ -20,7 +20,7 @@
     "prefix": "v3",
     "body": [
       "<template>",
-      "  <view class=\"\">$1</view>",
+      "  <view class=\"h-full flex flex-col overflow-hidden\">$1</view>",
       "</template>\n",
       "<script lang=\"ts\" setup>",
       "//$2",

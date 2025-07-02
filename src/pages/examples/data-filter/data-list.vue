@@ -1,5 +1,5 @@
 <template>
-  <view class="h-full p-3">
+  <view class="h-full overflow-hidden p-3">
     <z-paging ref="pagingRef" v-model="dataList" :fixed="false" auto-show-system-loading @query="queryList">
       <view v-for="item in dataList" :key="item.id" class="mb-3 rounded-xl bg-white p-3">
         <view class="flex items-start">

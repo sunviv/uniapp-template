@@ -36,6 +36,9 @@
       "path": "pages/examples/data-display/step"
     },
     {
+      "path": "pages/playground/index"
+    },
+    {
       "path": "pages/mine/index"
     }
   ],
