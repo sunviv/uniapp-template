@@ -7,8 +7,7 @@
   },
   "pages": [
     {
-      "path": "pages/home/index",
-      "needLogin": true
+      "path": "pages/home/index"
     },
     {
       "path": "pages/examples/data-filter/search-tab"
