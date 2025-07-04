@@ -17,11 +17,11 @@ export default defineConfig({
       'theme': 'var(--wot-color-theme)',
       'success': 'var(--wot-color-success)',
       'warning': 'var(--wot-color-warning)',
-      'error': 'var(--wot-color-error)',
+      'danger': 'var(--wot-color-danger)',
       'primary-1': 'var(--wot-color-theme-1)',
       'success-1': 'var(--wot-color-success-1)',
       'warning-1': 'var(--wot-color-warning-1)',
-      'error-1': 'var(--wot-color-error)',
+      'danger-1': 'var(--wot-color-danger)',
       'placeholder': '#F0F3FA',
       'font-color-primary': 'rgba(0, 0, 0, 0.85)',
       'font-color-normal': 'rgba(0, 0, 0, 0.65)',
@@ -55,9 +55,9 @@ export default defineConfig({
    * @see https://github.com/unocss/unocss#shortcuts
    */
   shortcuts: {
-    'tag-primary': 'rounded bg-primary-1 px-1 py-1 text-30 text-primary font-bold leading-none',
-    'tag-warning': 'rounded bg-warning-1 bg-op-10 px-1 py-1 text-30 text-warning font-bold leading-none',
-    'tag-success': 'rounded bg-success-1 bg-op-10 px-1 py-1 text-30 text-success font-bold leading-none',
+    'tag-primary': 'rounded bg-primary-1 px-1 h-48 text-30 text-primary font-bold leading-none flex items-center justify-center',
+    'tag-warning': 'rounded bg-warning-1 px-1 h-48 text-30 text-warning font-bold leading-none flex items-center justify-center',
+    'tag-success': 'rounded bg-success-1 px-1 h-48 text-30 text-success font-bold leading-none flex items-center justify-center',
   },
   transformers: [
     // 启用 @apply 功能

@@ -20,10 +20,10 @@
     </wd-cell-group>
     <view class="hairline" />
     <view class="flex flex-shrink-0 items-center justify-center bg-white px-4 py-2">
-      <wd-button :round="false" plain block class="flex-1 !mr-3" @click="handleReset">
+      <wd-button :round="false" plain block size="large" class="flex-1 !mr-3" @click="handleReset">
         重置
       </wd-button>
-      <wd-button :round="false" block type="primary" class="flex-1" @click="handleConfirm">
+      <wd-button :round="false" block type="primary" size="large" class="flex-1" @click="handleConfirm">
         确定
       </wd-button>
     </view>

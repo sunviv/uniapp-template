@@ -7,18 +7,18 @@
     <view>
       <view v-for="item in dataList" :key="item.id" class="m-3 rounded-xl bg-white p-3">
         <view class="flex items-start">
-          <view class="mr-2 flex-shrink-0 tag-primary">
+          <view class="mr-2 tag-primary flex-shrink-0">
             瓶盖
           </view>
-          <view class="break-all text-34 text-font-color-primary font-medium">
+          <view class="break-all text-34 text-font-color-primary font-bold">
             {{ item.productName }}
           </view>
         </view>
         <view class="my-2 flex items-center">
-          <view class="mr-2 flex-shrink-0 tag-warning">
+          <view class="mr-2 tag-warning flex-shrink-0">
             物料
           </view>
-          <view class="text-34 text-font-color-primary font-medium">
+          <view class="text-34 text-font-color-primary font-bold">
             B0144.10009
           </view>
           <view class="ml-auto rounded bg-placeholder px-1.5 py-1 text-28 text-font-color-secondary">
@@ -35,16 +35,16 @@
         </view>
 
         <view class="my-2 flex flex-1 items-center justify-between rounded-lg bg-placeholder px-3 py-2">
-          <view class="text-30 text-font-color-primary font-medium">
+          <view class="text-30 text-font-color-primary font-bold">
             物料数量
           </view>
           <view class="text-primary">
-            {{ 1000 }} 万只
+            <wd-text mode="price" :text="1000" bold type="primary" /> 万只
           </view>
         </view>
         <view class="flex flex-1 items-center justify-between rounded-lg bg-placeholder px-3 py-2">
           <view class="flex flex-1 flex-col items-center justify-center">
-            <view class="text-30 text-font-color-primary font-medium">
+            <view class="text-30 text-font-color-primary font-bold">
               {{ 123.45 }}万只
             </view>
             <view class="text-28 text-font-color-secondary">
@@ -52,7 +52,7 @@
             </view>
           </view>
           <view class="flex flex-1 flex-col items-center justify-center">
-            <view class="text-30 text-font-color-primary font-medium">
+            <view class="text-30 text-font-color-primary font-bold">
               {{ 123.45 }}万只
             </view>
             <view class="text-28 text-font-color-secondary">
@@ -60,7 +60,7 @@
             </view>
           </view>
           <view class="flex flex-1 flex-col items-center justify-center">
-            <view class="text-30 text-font-color-primary font-medium">
+            <view class="text-30 text-font-color-primary font-bold">
               {{ 123.45 }}万只
             </view>
             <view class="text-28 text-font-color-secondary">
@@ -86,7 +86,7 @@
         mode="scaleToFill"
         class="h-108 w-108"
       />
-      <view class="text-center text-40 text-font-color-primary font-medium">
+      <view class="text-center text-40 text-font-color-primary font-bold">
         {{ currentConfirmTitle }}
       </view>
       <view class="mt-2 text-center text-font-color-normal">

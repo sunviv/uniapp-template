@@ -3,10 +3,10 @@
     <z-paging ref="pagingRef" v-model="dataList" :fixed="false" auto-show-system-loading @query="queryList">
       <view v-for="item in dataList" :key="item.id" class="mb-3 rounded-xl bg-white p-3">
         <view class="flex items-start">
-          <view class="mr-2 flex-shrink-0 tag-success">
+          <view class="mr-2 tag-success flex-shrink-0">
             瓶盖
           </view>
-          <view class="break-all text-34 text-font-color-primary font-medium">
+          <view class="break-all text-34 text-font-color-primary font-bold">
             {{ item.productName }}
           </view>
         </view>
@@ -20,11 +20,11 @@
         </view>
         <view class="mt-2 flex items-center text-30 text-font-color-secondary">
           <view class="mr-3 flex flex-1 items-center justify-between rounded-lg bg-placeholder px-3 py-2">
-            <view class="text-30 text-font-color-primary">
+            <view class="text-30 text-font-color-primary font-bold">
               物料数量
             </view>
-            <view class="text-primary">
-              {{ 1000 }} 万只
+            <view class="text-primary font-bold">
+              <wd-text mode="price" :text="1000" bold type="primary" /> 万只
             </view>
           </view>
           <wd-button type="error" plain :round="false" @click="handleDelete(item)">

@@ -13,7 +13,7 @@
     </view>
     <view class="relative z-2 box-border overflow-hidden border-rounded-t-5 py-6 -mt-12 !bg-white">
       <view class="flex items-center justify-between px-6">
-        <view class="text-40 text-font-color-primary font-semibold">
+        <view class="text-40 text-font-color-primary font-bold">
           用户登录
         </view>
         <!-- <view class="text-font-color-secondary text-34">
@@ -73,8 +73,10 @@ const login = async () => {
   if (!valid) return
   isLogin.value = true
   const [err] = await to(userStore.loginByPwd({ username: loginModel.username, password: loginModel.password }))
-  isLogin.value = false
-  if (err) return
+  if (err) {
+    isLogin.value = false
+    return
+  }
 
   setTimeout(() => {
     if (isTabBarPath(redirect)) {
@@ -105,8 +107,17 @@ onLoad((options: any) => {
 <style lang="scss" scoped>
 :deep(.wd-input__label) {
   @apply !pl-0;
+
+  .wd-input__label-inner {
+    @apply !text-34;
+  }
+
   &::after {
     @apply hidden;
   }
+}
+
+:deep(.wd-input__inner) {
+  @apply !text-34;
 }
 </style>

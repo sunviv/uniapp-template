@@ -7,10 +7,10 @@
           <template #title>
             <view class="p-3">
               <view class="flex items-center justify-between text-34rpx">
-                <view class="text-34 text-font-color-primary font-medium">
+                <view class="text-34 text-font-color-primary font-bold">
                   第{{ index + 1 }}步
                 </view>
-                <view :class="{ 'text-success': item.status === 'finished', 'text-error': item.status === 'error', 'text-primary': item.status === 'process' }">
+                <view class="font-bold" :class="{ 'text-success': item.status === 'finished', 'text-error': item.status === 'error', 'text-primary': item.status === 'process' }">
                   {{ item.statusText }}
                 </view>
               </view>

@@ -12,7 +12,7 @@
             <view class="mr-2 flex-shrink-0 rounded bg-[#E0F3D6] px-1 py-1 text-30 text-[#18BC37] font-bold leading-none">
               瓶盖
             </view>
-            <view class="break-all text-34 text-font-color-primary font-medium">
+            <view class="break-all text-34 text-font-color-primary font-bold">
               {{ item.productName }}
             </view>
           </view>
@@ -39,10 +39,10 @@
     </wd-checkbox-group>
     <template #bottom>
       <view class="form-actions !relative">
-        <wd-button plain :round="false" class="flex-1 !mr-3" @click="handleReset">
+        <wd-button plain size="large" :round="false" class="flex-1 !mr-3" @click="handleReset">
           重置
         </wd-button>
-        <wd-button type="primary" :round="false" class="flex-1" @click="handleConfirm">
+        <wd-button type="primary" size="large" :round="false" class="flex-1" @click="handleConfirm">
           确定
         </wd-button>
       </view>

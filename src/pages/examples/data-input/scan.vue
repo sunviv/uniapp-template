@@ -1,14 +1,15 @@
 <template>
   <view class="h-full flex flex-col overflow-hidden">
-    <wd-navbar left-arrow safe-area-inset-top title="显式条件筛选" @click-left="handleBack" />
+    <wd-navbar left-arrow safe-area-inset-top title="扫码示例" @click-left="handleBack" />
     <wd-cell-group border>
-      <wd-cell title-width="240rpx" title="PDA 扫码">
-        <wd-input v-model="broadcastCodeValue" placeholder="请扫描箱码" placeholder-class="text-font-color-placeholder" no-border readonly align-right />
-      </wd-cell>
-      <wd-cell title-width="240rpx" title="PDA 扫码(可输入)">
-        <wd-input v-model="inputCodeValue" placeholder="请扫描或输入盒码" placeholder-class="text-font-color-placeholder" no-border align-right />
-      </wd-cell>
+      <!-- <wd-cell title-width="240rpx" title="箱码"> -->
+      <wd-input v-model="xCode" label="箱码" label-width="240rpx" clearable placeholder="请扫描或输入箱码" placeholder-class="text-font-color-placeholder" align-right :focus="xCodeFocus" @focus="xCodeFocus = true" @blur="xCodeFocus = false" />
+      <!-- </wd-cell> -->
+      <!-- <wd-cell title-width="240rpx" title="盒码"> -->
+      <wd-input v-model="hCode" label="盒码" label-width="240rpx" clearable placeholder="请扫描或输入盒码" placeholder-class="text-font-color-placeholder" align-right :focus="hCodeFocus" @focus="hCodeFocus = true" @blur="hCodeFocus = false" />
+      <!-- </wd-cell> -->
       <wd-cell title-width="240rpx" title="摄像头扫码" is-link :value="scanCodeValue" @click="handleScan" />
+      <wd-cell title-width="240rpx" title="连续扫码示例" is-link @click="navigateTo('/pages/examples/data-input/continuous-scan')" />
     </wd-cell-group>
     <BroadcastScan />
   </view>
@@ -17,14 +18,26 @@
 <script lang="ts" setup>
 import { BroadcastScanEvent } from '@/components/BroadcastScan'
 
-const broadcastCodeValue = ref('')
-const inputCodeValue = ref('')
+const xCodeFocus = ref(true)
+const hCodeFocus = ref(false)
+// 箱码
+const xCode = ref('')
+// 盒码
+const hCode = ref('')
+// 摄像头扫码值
 const scanCodeValue = ref('')
 
 onShow(() => {
   uni.$on(BroadcastScanEvent, (code) => {
     console.log('scan:', code)
-    broadcastCodeValue.value = code
+    if (xCodeFocus.value) {
+      xCode.value = code
+      xCodeFocus.value = false
+      hCodeFocus.value = true
+    }
+    else if (hCodeFocus.value) {
+      hCode.value = code
+    }
   })
 })
 
@@ -35,6 +48,7 @@ onHide(() => {
 onUnload(() => {
   uni.$off(BroadcastScanEvent)
 })
+
 function handleScan() {
   // 扫码
   uni.scanCode({
@@ -44,8 +58,15 @@ function handleScan() {
     },
   })
 }
+
 function handleBack() {
   uni.navigateBack()
+}
+
+function navigateTo(path: string) {
+  uni.navigateTo({
+    url: path,
+  })
 }
 </script>
 

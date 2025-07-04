@@ -31,6 +31,12 @@
       "path": "pages/examples/data-input/scan"
     },
     {
+      "path": "pages/examples/data-input/continuous-scan"
+    },
+    {
+      "path": "pages/examples/data-input/nfc"
+    },
+    {
       "path": "pages/examples/data-display/data-list"
     },
     {

@@ -79,10 +79,10 @@
         </wd-cell-group>
         <view class="h-120" />
         <view class="form-actions">
-          <wd-button plain :round="false" class="flex-1 !mr-3" @click="handleReset">
+          <wd-button plain :round="false" size="large" class="flex-1 !mr-3" @click="handleReset">
             重置
           </wd-button>
-          <wd-button :round="false" class="flex-1" type="primary" @click="handleSubmit">
+          <wd-button :round="false" size="large" class="flex-1" type="primary" @click="handleSubmit">
             提交
           </wd-button>
         </view>

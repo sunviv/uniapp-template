@@ -88,6 +88,7 @@ page {
   .filter-radio, .filter-checkbox {
     box-sizing: border-box;
     width: auto !important;
+    min-width: 33.33%;
     max-width: 100%;
     padding: 0 16rpx 16rpx 0 !important;
   }
@@ -117,7 +118,8 @@ page {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16rpx 48rpx;
+    height: 120rpx;
+    padding: 0 48rpx;
     background-color: #fff;
     border-top: 1px solid #ededed;
     box-shadow: 0rpx -10rpx 20rpx 0rpx rgba(0 0 0 / 6%);

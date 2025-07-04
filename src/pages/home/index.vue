@@ -29,6 +29,7 @@
         <wd-cell-group border>
           <wd-cell title="表单综合案例" is-link @click="navigateTo('/pages/examples/data-input/form-demo')" />
           <wd-cell title="扫码示例" is-link @click="navigateTo('/pages/examples/data-input/scan')" />
+          <wd-cell title="NFC示例" is-link @click="navigateTo('/pages/examples/data-input/nfc')" />
         </wd-cell-group>
       </wd-collapse-item>
     </wd-collapse>
