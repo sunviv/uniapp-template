@@ -8,7 +8,7 @@ export interface IResponse<T = any> {
 
 // 分页请求参数
 export interface PageParams {
-  page: number;
+  pageNum: number;
   pageSize: number;
   [key: string]: any;
 }
