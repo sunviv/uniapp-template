@@ -1,6 +1,6 @@
 <template>
   <view class="h-full flex flex-col overflow-hidden">
-    <wd-navbar left-arrow safe-area-inset-top title="表单综合案例" class="flex-shrink-0" @click-left="handleBack" />
+    <wd-navbar safe-area-inset-top left-arrow title="表单综合案例" class="flex-shrink-0" @click-left="handleBack" />
     <view class="h-100 flex-1 overflow-y-auto p-3">
       <wd-form ref="formRef" :model="formModel">
         <wd-cell-group border class="form-group">
@@ -99,6 +99,7 @@ import type { UploadFile } from 'wot-design-uni/components/wd-upload/types'
 import { useRouter } from '@/hooks'
 import { getApiBaseUrl, getToken, TokenPrefix } from '@/utils'
 import to from 'await-to-js'
+import dayjs from 'dayjs'
 import { CustomSelectEvent } from './types'
 
 const router = useRouter()
@@ -118,7 +119,7 @@ interface FormModel {
   singleFileList: UploadFile[];
   multiFileList: UploadFile[];
   time: string;
-  timeRange: string[];
+  timeRange: (string | number)[];
 }
 const formRef = ref()
 const formModel = ref<FormModel>({
@@ -136,7 +137,7 @@ const formModel = ref<FormModel>({
   singleFileList: [],
   multiFileList: [],
   time: '',
-  timeRange: [],
+  timeRange: [dayjs().subtract(1, 'month').unix() * 1000, Date.now()],
 })
 const customSelectedLabel = ref('')
 
