@@ -59,10 +59,10 @@ interface Props {
 const pagingRef = ref<ZPagingRef> ()
 const dataList = ref<ListItem[]>([])
 
-async function queryList(pageNo: number, pageSize: number) {
-  console.log('[ pageNo ] >', pageNo)
+async function queryList(pageNum: number, pageSize: number) {
+  console.log('[ pageNum ] >', pageNum)
   console.log('[ pageSize ] >', pageSize)
-  const { list } = await apiList({ page: pageNo, pageSize, ...props.queryParams })
+  const { list } = await apiList({ pageNum, pageSize, ...props.queryParams })
   pagingRef.value?.complete(list)
 }
 
