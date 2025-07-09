@@ -66,10 +66,10 @@ async function queryList(pageNum: number, pageSize: number) {
   pagingRef.value?.complete(list)
 }
 
-watch(() => props.queryParams, () => {
-  console.log('[ queryParams ] >', props.queryParams)
-  pagingRef.value?.reload()
-}, { deep: true })
+// watch(() => props.queryParams, () => {
+//   console.log('[ queryParams ] >', props.queryParams)
+//   pagingRef.value?.refresh()
+// }, { deep: true })
 
 async function handleDelete(item: ListItem) {
   try {

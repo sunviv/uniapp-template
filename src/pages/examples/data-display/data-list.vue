@@ -113,10 +113,10 @@ const searchValue = ref('')
 watch(() => searchValue.value, () => {
   pagingRef.value?.reload()
 })
-async function queryList(pageNo: number, pageSize: number) {
-  console.log('[ pageNo ] >', pageNo)
+async function queryList(pageNum: number, pageSize: number) {
+  console.log('[ pageNo ] >', pageNum)
   console.log('[ pageSize ] >', pageSize)
-  const { list } = await apiList({ page: pageNo, pageSize, searchValue: searchValue.value })
+  const { list } = await apiList({ pageNum, pageSize, searchValue: searchValue.value })
   pagingRef.value?.complete(list)
 }
 

@@ -18,10 +18,12 @@ export default defineConfig({
       'success': 'var(--wot-color-success)',
       'warning': 'var(--wot-color-warning)',
       'danger': 'var(--wot-color-danger)',
+      'info': 'var(--wot-color-info)',
       'primary-1': 'var(--wot-color-theme-1)',
       'success-1': 'var(--wot-color-success-1)',
       'warning-1': 'var(--wot-color-warning-1)',
       'danger-1': 'var(--wot-color-danger)',
+      'info-1': 'var(--wot-color-info-1)',
       'placeholder': '#F0F3FA',
       'font-color-primary': 'rgba(0, 0, 0, 0.85)',
       'font-color-normal': 'rgba(0, 0, 0, 0.65)',
@@ -58,6 +60,8 @@ export default defineConfig({
     'tag-primary': 'rounded bg-primary-1 px-1 h-48 text-30 text-primary font-bold leading-none flex items-center justify-center',
     'tag-warning': 'rounded bg-warning-1 px-1 h-48 text-30 text-warning font-bold leading-none flex items-center justify-center',
     'tag-success': 'rounded bg-success-1 px-1 h-48 text-30 text-success font-bold leading-none flex items-center justify-center',
+    'tag-danger': 'rounded bg-danger-1 px-1 h-48 text-30 text-danger font-bold leading-none flex items-center justify-center',
+    'tag-info': 'rounded bg-info-1 px-1 h-48 text-30 text-info font-bold leading-none flex items-center justify-center',
   },
   transformers: [
     // 启用 @apply 功能

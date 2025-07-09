@@ -15,7 +15,7 @@
       <block v-for="item in tabs" :key="item">
         <wd-tab :title="item.title" :name="item.name" auto-line-width>
           <view class="h-[calc(100vh-148px)]">
-            <DataList :query-params="queryParams" />
+            <DataList v-if="item.name === activeTab" :query-params="queryParams" />
           </view>
         </wd-tab>
       </block>
@@ -77,6 +77,7 @@ const tabs = ref<{ name: string; title: string }[]>([
 ])
 const activeTab = ref<string>('分类1')
 function handleChangeTab({ name }: { name: string }) {
+  console.log('*************')
   queryParams.category = name
 }
 

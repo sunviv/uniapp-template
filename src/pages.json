@@ -43,6 +43,9 @@
       "path": "pages/examples/data-display/step"
     },
     {
+      "path": "pages/examples/data-display/color"
+    },
+    {
       "path": "pages/playground/index"
     },
     {

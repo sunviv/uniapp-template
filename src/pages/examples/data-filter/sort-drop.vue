@@ -2,6 +2,7 @@
   <view class="h-full flex flex-col overflow-hidden">
     <wd-navbar safe-area-inset-top left-arrow title="搜索+下拉条件" @click-left="handleBack" />
     <wd-search v-model="searchValue" hide-cancel placeholder-left class="flex-shrink-0 px-2" @search="handleSearch" />
+    <wd-datetime-picker v-model="timeRange" type="date" label="时间范围" class="custom-datetime-picker" />
     <view class="flex flex-nowrap justify-between bg-white px-4">
       <view class="w-140 flex-shrink-0" @click="closeOutside">
         <wd-sort-button v-model="sort.price" title="价格" allow-reset :line="true" />
@@ -67,6 +68,8 @@ const searchValue = ref<string>('')
 function handleSearch() {
   console.log(searchValue.value)
 }
+
+const timeRange = ref<(string | number)[]>([])
 
 const sort = reactive<{ price: number; rating: number }>({ price: 0, rating: 0 })
 const simpleFilterValue = ref<number>(0)

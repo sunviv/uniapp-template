@@ -22,6 +22,7 @@
         <wd-cell-group border>
           <wd-cell title="列表+普通分页" is-link @click="navigateTo('/pages/examples/data-display/data-list')" />
           <wd-cell title="步骤条" is-link @click="navigateTo('/pages/examples/data-display/step')" />
+          <wd-cell title="颜色、标签" is-link @click="navigateTo('/pages/examples/data-display/color')" />
         </wd-cell-group>
       </wd-collapse-item>
       <div class="h-16 bg-placeholder" />
