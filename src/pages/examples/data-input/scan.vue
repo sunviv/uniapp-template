@@ -11,7 +11,7 @@
       <wd-cell title-width="240rpx" title="摄像头扫码" is-link :value="scanCodeValue" @click="handleScan" />
       <wd-cell title-width="240rpx" title="兼容三种扫码">
         <view class="flex flex-nowrap items-center">
-          <wd-input v-model="mixCode" class="mr-4 flex-1" placeholder="请扫描或输入" clearable align-right no-border :focus="mixCodeFocus" @focus="mixCodeFocus = true" @blur="mixCodeFocus = false" />
+          <wd-input v-model="mixCode" class="mr-2 flex-1" placeholder="请扫描或输入" clearable align-right no-border :focus="mixCodeFocus" @focus="mixCodeFocus = true" @blur="mixCodeFocus = false" />
           <view class="i-mdi:scan-helper px-1 text-font-color-placeholder font-bold" @click="handleMixCodeScan" />
         </view>
       </wd-cell>
