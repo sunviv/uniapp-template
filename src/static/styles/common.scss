@@ -1,3 +1,4 @@
+/* stylelint-disable alpha-value-notation */
 /* stylelint-disable color-function-notation */
 /* stylelint-disable selector-class-pattern */
 :root,
@@ -37,13 +38,14 @@ page {
   --wot-textarea-fs: 30rpx;
   --wot-input-fs: 30rpx;
   --wot-input-cell-padding: 24rpx;
+  --wot-input-placeholder-color: rgba(0, 0, 0, 0.25);
   --wot-steps-finished-color: var(--wot-color-success);
 
   height: 100%;
   background-color: #F0F3FA;
 
   .uni-input-placeholder {
-    color: var(--wot-input-placeholder-color);
+    color: var(--wot-input-placeholder-color) !important;
   }
 
   .wd-tabs {

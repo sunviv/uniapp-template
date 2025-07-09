@@ -12,7 +12,7 @@
       <wd-cell title-width="240rpx" title="兼容三种扫码">
         <view class="flex flex-nowrap items-center">
           <wd-input v-model="mixCode" class="mr-2 flex-1" placeholder="请扫描或输入" clearable align-right no-border :focus="mixCodeFocus" @focus="mixCodeFocus = true" @blur="mixCodeFocus = false" />
-          <view class="i-mdi:scan-helper px-1 text-font-color-placeholder font-bold" @click="handleMixCodeScan" />
+          <view class="i-mdi:line-scan px-1 text-34 text-primary font-bold" @click="handleMixCodeScan" />
         </view>
       </wd-cell>
       <wd-cell title-width="240rpx" title="连续扫码示例" is-link @click="navigateTo('/pages/examples/data-input/continuous-scan')" />
