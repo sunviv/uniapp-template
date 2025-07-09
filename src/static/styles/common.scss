@@ -1,3 +1,4 @@
+/* stylelint-disable alpha-value-notation */
 /* stylelint-disable color-function-notation */
 /* stylelint-disable selector-class-pattern */
 :root,
@@ -37,10 +38,15 @@ page {
   --wot-textarea-fs: 30rpx;
   --wot-input-fs: 30rpx;
   --wot-input-cell-padding: 24rpx;
+  --wot-input-placeholder-color: rgba(0, 0, 0, 0.25);
   --wot-steps-finished-color: var(--wot-color-success);
 
   height: 100%;
   background-color: #F0F3FA;
+
+  .uni-input-placeholder {
+    color: var(--wot-input-placeholder-color) !important;
+  }
 
   .wd-tabs {
     background-color: transparent !important;
@@ -237,3 +243,4 @@ html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
   font-size: 16px !important;
 }
+
